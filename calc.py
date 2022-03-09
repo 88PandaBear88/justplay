@@ -9,12 +9,13 @@ def show_menu():
     print("2. menghitung margin untung rugi")
     print("3. menghitung diskon")
     print("4. menghitung luas dan keliling lingkaran")
-    print("5. exit")
+    print("5. menghitung harga jual kembali")
     print("6. youtube downloader")
     print("7. game gunting batu kertas")
     print("8. game tebak angka")
     print("9. blackjack")
     print("10. hitung usia")
+    print("11. exit")
     choice = input("pilihan anda : ")
     if choice == "1" :
         print("")
@@ -29,7 +30,7 @@ def show_menu():
         print("")
         hitung_luas_dan_keliling_lingkaran()
     elif choice == "5":
-        exit()
+        hitung_harga_satuan()
     elif choice == "6":
         print("")
         youtube_downloader()
@@ -45,6 +46,8 @@ def show_menu():
     elif choice == "10":
         print(" ")
         usia()
+    elif choice == "11":
+        exit()
     else:
         print("salah pilih ya kk... pilih lagi yuk")
         print("")
@@ -331,7 +334,7 @@ def blackjack():
 
 
     def main():
-        print('''Blackjack, by Al Sweigart al@inventwithpython.com
+        print('''Blackjack, 
 
         Rules:
           Try to get as close to 21 without going over.
